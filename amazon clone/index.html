@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Me</title>
+    <link rel="icon" href="assets/images/msg_favicon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Contact Form -->
+    <form id="contact-form">
+        <div class="form-content">
+
+            <input type="hidden" name="access_key" value="5242715d-e53c-4f50-a589-8287dd85fea9">
+
+            <h1>Message Me</h1>
+
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+                <input type="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group">
+                <textarea name="message" placeholder="Your Message" required></textarea>
+            </div>
+
+            <div class="submit">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+
+    <!-- Success Message -->
+    <div class="success-message">
+        <svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="#00ffae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10" />
+            <path d="M9 12l2 2l4 -4" />
+        </svg>
+        <h1>Form submitted successfully!</h1>
+        <p>Thank you!<br>The form has been submitted successfully.<br>We will reply to you soon!</p>
+        <a href="">Go back</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

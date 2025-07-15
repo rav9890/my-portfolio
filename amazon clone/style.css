@@ -1,0 +1,126 @@
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
+            color: #00ffff;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            background-image: url('assets/images/backgroung.jpg'); 
+            background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-content {
+            width: 90%;
+            max-width: 400px;
+            padding: 30px;
+            border: 2px solid silver;
+            background-color: #131D4F;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin: 15px 0;
+            border-bottom: 1px solid white;
+            display: flex;
+            align-items: center;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            padding: 10px;
+            color: white;
+            font-size: 16px;
+            resize: none;
+        }
+
+        .submit button {
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: #00ffff;
+            color: black;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .submit button:hover {
+            background-color: #00ccff;
+        }
+
+        .success-message {
+            text-align: center;
+            background-color: #131D4F;
+            padding: 30px;
+            /* border-radius: 10px; */
+            /* border: 2px solid #00ffae; */
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+            display: none;
+        }
+
+        .success-message h1 {
+            color: #00ffae;
+            margin-top: 20px;
+        }
+
+        .success-message p {
+            color: #ccc;
+        }
+
+        .success-message a {
+            color: #fff;
+            text-decoration: underline;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .form-content {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 20px;
+            }
+
+            .form-content {
+                padding: 20px;
+            }
+
+            input,
+            textarea {
+                font-size: 14px;
+                padding: 8px;
+            }
+
+            .submit button {
+                padding: 8px;
+            }
+        }
